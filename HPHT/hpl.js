@@ -10,21 +10,25 @@ function toggleButtonState() {
   }
 }
 
+const today = new Date().toISOString().split('T')[0];
+hpht.max = today
+
 dateSub.addEventListener('click',()=>{
     let hpl = new Date(hpht.value)
     hpl.setDate(hpl.getDate() + 7)
     hpl.setMonth(hpl.getMonth() - 3)
     hpl.setFullYear(hpl.getFullYear() + 1)
+    let x = hpl.setDate(hpl.getDate() + 280)
     let formatDate = { year: 'numeric', month: 'long', day: 'numeric'}
     let formatter = new Intl.DateTimeFormat('id-ID',formatDate)
-
+    console.log(`ini itungan hpl ${ formatter.format(hpl)}, ini itungan gwe ${formatter.format(x)}`)
     let formatHPL = formatter.format(hpl);
     
      modal.innerHTML = 
     `
     <div class="text-center p-4 bg-light rounded shadow-sm">
         <h5 class="mb-3 text-success">Perkiraan akan lahir pada :</h5>
-        <h6 class="display-5 fw-bold text-dark">${formatHPL}</h6>
+        <h5 class="fw-bold text-dark">${formatHPL}</h5>
         <p class="mb-1 text-muted">Hasil perhitungan HPL</p>
         <hr class="my-4">
         <h6 class="fw-semibold">
