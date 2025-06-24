@@ -18,10 +18,8 @@ dateSub.addEventListener('click',()=>{
     hpl.setDate(hpl.getDate() + 7)
     hpl.setMonth(hpl.getMonth() - 3)
     hpl.setFullYear(hpl.getFullYear() + 1)
-    let x = hpl.setDate(hpl.getDate() + 280)
     let formatDate = { year: 'numeric', month: 'long', day: 'numeric'}
     let formatter = new Intl.DateTimeFormat('id-ID',formatDate)
-    console.log(`ini itungan hpl ${ formatter.format(hpl)}, ini itungan gwe ${formatter.format(x)}`)
     let formatHPL = formatter.format(hpl);
     
      modal.innerHTML = 
