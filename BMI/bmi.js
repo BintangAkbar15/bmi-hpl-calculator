@@ -47,6 +47,18 @@ function toggleButtonState() {
     }
 }
 
+tb.addEventListener("keydown", function(e) {
+    if (e.key === '-' || e.key === 'Minus' || e.key === 'e') {
+        e.preventDefault(); // ini yang bikin ga bisa minus
+    }
+});
+
+bb.addEventListener("keydown", function(e) {
+    if (e.key === '-' || e.key === 'Minus' || e.key === 'e') {
+        e.preventDefault(); // ini yang bikin ga bisa minus
+    }
+});
+
 function countBMI(){
     let tinggi = parseFloat(tb.value) / 100; // convert cm to meter
     let berat = parseFloat(bb.value);
