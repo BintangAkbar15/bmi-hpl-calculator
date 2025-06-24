@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RSJA - HPL</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../asset/logo.png" type="image/x-icon">
+</head>
+<body class="bg-light">
+    <div class="container d-block mb-5">
+        <header class="py-3 bg-white shadow-sm mb-md-5 mb-3">
+            <div class="container text-center">
+                <img src="../asset/head.png" alt="Logo RSJA" width="50" class="mb-2">
+            </div>
+        </header>
+        <div class="d-flex">
+            <div class="row justify-content-center align-items-center min-vh-75">
+                <div class="col-lg-6 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <h2 class="mb-3 text-primary">Kalkulator Kehamilan</h2>
+                        <p class="mb-4 text-muted">Yuk cari tahu Hari Perkiraan Lahir si Kecil berdasarkan HPHT Anda.</p>
+    
+                        <div class="mb-3">
+                            <label for="hphtInput" class="form-label">Hari Pertama Haid Terakhir</label>
+                            <input type="date" class="form-control" id="hphtInput">
+                        </div>
+    
+                        <button class="btn btn-primary w-100 mt-3" id="hplSubmit" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Hitung HPL</button>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <!-- disini hasilnya -->
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6 d-flex flex-column gap-2">
+                    <div class="bg-white rounded shadow-sm">
+                        <div class="p-2">
+                            <h5 class="text-secondary">Apa itu HPL?</h5>
+                            <p class="text-muted">
+                                HPL (Hari Perkiraan Lahir) adalah tanggal perkiraan bayi akan lahir, dihitung berdasarkan hari pertama haid terakhir atau hasil pemeriksaan USG. Kalkulator ini membantu memantau kehamilan secara lebih terencana.
+                            </p>
+                        </div>
+                        <div class="p-2">
+                            <h5 class="text-secondary">Kenapa Penting?</h5>
+                            <p class="text-muted">
+                                Mengetahui HPL membantu kamu:
+                                <ul class="text-muted">
+                                    <li>Memantau perkembangan kehamilan dari minggu ke minggu.</li>
+                                    <li>Merencanakan persalinan dengan lebih baik.</li>
+                                    <li>Menentukan jadwal pemeriksaan kehamilan secara tepat.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <a href="../BMI/bmi.html">
+                            <div class="btn-wrapper p-1 pt-0 ps-3 bg-white">
+                                <p class="info-title text-muted fs-6">Klik disini untuk cari tahu index masa tubuh kamu!</p>
+                            </div>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="hpl.js"></script>
+</body>
+</html>
