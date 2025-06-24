@@ -74,3 +74,24 @@ a{
     color: #333;
     margin: 0;
 }
+
+@media (max-width: 776px) {
+    .info-section {
+        width: 100%;
+        padding: 24px 12px;
+    }
+
+    .btn-wrapper {
+        padding: 16px;
+        border-left-width: 3px;
+    }
+
+    .info-title {
+        font-size: 15px;
+    }
+
+    .info-desc {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
