@@ -49,13 +49,13 @@ function toggleButtonState() {
 
 tb.addEventListener("keydown", function(e) {
     if (e.key === '-' || e.key === 'Minus' || e.key === 'e') {
-        e.preventDefault(); // ini yang bikin ga bisa minus
+        e.preventDefault();
     }
 });
 
 bb.addEventListener("keydown", function(e) {
     if (e.key === '-' || e.key === 'Minus' || e.key === 'e') {
-        e.preventDefault(); // ini yang bikin ga bisa minus
+        e.preventDefault();
     }
 });
 
